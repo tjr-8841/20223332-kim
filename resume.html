@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>김민석 — AI 엔지니어 / 창업가</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f0ede8; --paper:#ffffff; --line:#ddd8d0;
+  --fg:#1a1714; --muted:#6b6159; --amber:#d4600a; --amber-soft:#b84f00; --ember:#c0392b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);font-family:'IBM Plex Sans KR',sans-serif;color:var(--fg);
+  line-height:1.75;-webkit-font-smoothing:antialiased;padding:2.5rem 1rem;}
+.page{
+  width:860px;margin:0 auto;background:var(--paper);
+  border:1px solid var(--line);border-radius:8px;
+  padding:4rem;
+  box-shadow:0 20px 60px rgba(0,0,0,.1);
+}
+.mono{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.14em;color:var(--amber)}
+::selection{background:var(--amber);color:#ffffff}
+a{color:var(--amber);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* HEADER */
+header{display:flex;justify-content:space-between;align-items:flex-end;
+  flex-wrap:wrap;gap:1rem;padding-bottom:.9rem;border-bottom:2px solid var(--amber);margin-bottom:2.2rem}
+header h1{font-family:'Gowun Batang';font-weight:700;font-size:clamp(2rem,5vw,2.7rem);letter-spacing:-.01em;line-height:1}
+header .role{color:var(--amber-soft);font-size:.92rem;margin-top:.8rem}
+header .contact{text-align:right;font-size:.82rem;color:var(--muted);line-height:1.8;font-family:'JetBrains Mono';flex-shrink:0;margin-left:auto}
+header .contact a{color:var(--muted)}
+@media(max-width:560px){header .contact{text-align:left}}
+
+/* SECTION */
+section{margin-bottom:2.2rem}
+h2{font-size:.84rem;letter-spacing:.08em;font-weight:700;
+  color:var(--amber);margin-bottom:1rem;padding-bottom:.45rem;border-bottom:1px solid var(--line)}
+.lead{color:var(--muted);font-size:.95rem;line-height:1.85}
+.lead strong{color:var(--fg);font-weight:600}
+
+/* ENTRY */
+.entry{margin-bottom:1.3rem;padding-bottom:1.1rem;border-bottom:1px solid var(--line)}
+.entry:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.entry .top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.3rem;align-items:baseline;margin-bottom:.3rem}
+.entry .ttl{font-weight:600;font-size:.98rem}
+.entry .ttl span{color:var(--amber-soft);font-weight:400}
+.entry .date{font-family:'JetBrains Mono';font-size:.74rem;color:var(--muted)}
+.entry .desc{color:var(--muted);font-size:.89rem;margin-top:.2rem;line-height:1.7}
+.entry ul{list-style:none;margin-top:.55rem}
+.entry li{color:var(--muted);font-size:.89rem;padding-left:1.1rem;position:relative;margin-bottom:.4rem;line-height:1.7}
+.entry li::before{content:"▸";position:absolute;left:0;color:var(--amber);font-size:.7rem;top:.15rem}
+
+/* SKILLS */
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:.65rem 2rem}
+@media(max-width:560px){.skills{grid-template-columns:1fr}}
+.skills .row{display:flex;justify-content:space-between;font-size:.88rem;padding:.25rem 0;border-bottom:1px dotted var(--line)}
+.skills .row b{font-weight:500}
+.skills .row span{color:var(--muted);font-family:'JetBrains Mono';font-size:.72rem}
+
+/* TWO COL */
+.cols{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem}
+@media(max-width:560px){.cols{grid-template-columns:1fr;gap:1.6rem}}
+
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.65rem}
+.tag{font-family:'JetBrains Mono';font-size:.68rem;padding:.15rem .55rem;border:1px solid var(--line);border-radius:99px;color:var(--muted)}
+
+.goals{display:flex;flex-wrap:wrap;gap:.4rem}
+.goal{font-size:.78rem;padding:.25rem .75rem;border:1px solid var(--line);border-radius:99px;color:var(--amber-soft)}
+
+footer{text-align:center;margin-top:1.4rem;padding-top:1rem;border-top:1px solid var(--line);
+  font-family:'JetBrains Mono';font-size:.68rem;color:var(--muted)}
+.dl{display:inline-block;margin-top:.4rem;padding:.45rem 1.1rem;border:1px solid var(--amber);
+  border-radius:99px;color:var(--amber);font-size:.8rem;font-weight:500}
+.dl:hover{background:var(--amber);color:#ffffff;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div>
+      <h1>김민석</h1>
+      <div class="role">인공지능공학과 · LLM 응용 · 기획/프런트엔드 · Aurteon 창업가</div>
+    </div>
+    <div class="contact">
+      ✉ tjr8841@gmail.com<br>
+      ✉ official.deepfurnace@gmail.com<br>
+      <a href="https://github.com/tjr-8841">github.com/tjr-8841</a>
+    </div>
+  </header>
+
+  <!-- 자기소개 -->
+  <section>
+    <h2>자기소개</h2>
+    <p class="lead"><strong>인공지능공학</strong>을 전공하며 <strong>LLM 응용</strong>과 <strong>AI 기반 서비스 기획</strong>에 집중하고 있습니다. 모델 연구보다 사람들이 실제로 쓰는 제품을 만드는 데 관심이 많으며, <strong>기획과 프런트엔드</strong>를 직접 다루며 아이디어를 빠르게 구현하는 것을 즐깁니다. 현재 LLM 응용 문제 풀이 웹 서비스 <strong>DeepFurnace</strong>를 창업체 Aurteon을 통해 개발 중이며, 졸업 후 <strong>AI 스타트업 창업</strong>을 목표로 하고 있습니다.</p>
+  </section>
+
+  <div class="cols">
+    <div>
+      <!-- 학력 -->
+      <section>
+        <h2>학력</h2>
+        <div class="entry">
+          <div class="top">
+            <span class="ttl">조선대학교 <span>· 인공지능공학과</span></span>
+            <span class="date">2022 – 2028 (졸업 예정)</span>
+          </div>
+          <div class="desc">3학년 재학</div>
+          <div class="desc">주요 수강: 딥러닝, 수치해석, 자연어처리, 파이썬, C언어</div>
+        </div>
+      </section>
+
+      <!-- 활동 / 경력 -->
+      <section>
+        <h2>활동 · 경력</h2>
+        <div class="entry">
+          <div class="top"><span class="ttl">창업동아리 팀장 <span>· 에이에스소프트 / Aurteon</span></span><span class="date">2025 – 2026</span></div>
+          <div class="desc">팀 빌딩 및 운영, AI 서비스 제품 기획·개발 주도</div>
+        </div>
+        <div class="entry">
+          <div class="top"><span class="ttl">Bias-A-Thon <span>· 특별상 수상</span></span><span class="date">2025</span></div>
+          <div class="desc">거대언어모델의 편향 발견과 대응 챌린지 — LLM 편향 분석 및 대응 방안 제시</div>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <!-- 기술 -->
+      <section>
+        <h2>기술 역량</h2>
+        <div class="skills">
+          <div class="row"><b>Python</b><span>중급</span></div>
+          <div class="row"><b>JavaScript</b><span>중급</span></div>
+          <div class="row"><b>HTML/CSS</b><span>중급</span></div>
+          <div class="row"><b>C/C++</b><span>중급</span></div>
+          <div class="row"><b>Git</b><span>중급</span></div>
+          <div class="row"><b>SQL</b><span>초급</span></div>
+        </div>
+      </section>
+
+      <!-- 진로 목표 -->
+      <section>
+        <h2>진로 목표</h2>
+        <div class="goals">
+          <span class="goal">AI 스타트업 창업</span>
+          <span class="goal">LLM 서비스 기획</span>
+          <span class="goal">프런트엔드 개발</span>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- 프로젝트 -->
+  <section>
+    <h2>프로젝트</h2>
+    <div class="entry">
+      <div class="top"><span class="ttl">DeepFurnace <span>· 창업 / 기획·개발</span></span><span class="date">2026.03 – 현재</span></div>
+      <div class="desc">LLM 응용 능력을 문제 풀이 방식으로 학습·평가하는 웹 서비스. 프롬프트 설계·모델 활용 역량을 실전 문제로 기를 수 있는 플랫폼.</div>
+      <ul>
+        <li>LLM 응용 문제 출제 · 자동 채점 엔진 · 파생 문제 생성 구현</li>
+        <li>기획 및 프런트엔드 직접 담당 · 2026.09 출시 목표 (창업체 Aurteon)</li>
+      </ul>
+      <div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">LLM API</span><span class="tag">SQLite</span></div>
+      <div class="desc" style="margin-top:.4rem"><a href="#">GitHub</a> · <a href="#">데모</a></div>
+    </div>
+    <div class="entry">
+      <div class="top"><span class="ttl">퀀트 트레이딩 모델 <span>· 개인 개발</span></span><span class="date">2026 – 현재</span></div>
+      <div class="desc">데이터 기반 자동 매매 전략 설계 및 백테스팅 모델 개인 개발 중.</div>
+      <div class="tags"><span class="tag">Python</span><span class="tag">데이터 분석</span><span class="tag">백테스팅</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="./resume.pdf" class="dl">↓ 이력서 PDF 다운로드</a>
+    <div style="margin-top:.8rem">© 2026 김민석 · GitHub Pages 배포</div>
+  </footer>
+
+</div>
+<script>
+function scaleToFit() {
+  const scale = Math.min(1, window.innerWidth / 960);
+  document.documentElement.style.zoom = scale;
+}
+window.addEventListener('resize', scaleToFit);
+scaleToFit();
+</script>
+</body>
+</html>
